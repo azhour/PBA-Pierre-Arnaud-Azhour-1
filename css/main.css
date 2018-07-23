@@ -97,22 +97,77 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  nav{
+    background-color: #1d1d1e;
+    margin : 0;
+    position: fixed;
+  }
 
+  nav a{
+    font-family: 'lovelo', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+nav .collapse ul li a:hover{
+  color:#d8383f;
+}
+  nav .form-inline .form-control{
+    border: 4px solid white;
+    background-color: black;
+    border-radius: 0px;
+    width : 150px;
+    height : 35px;
+    background-color: #1d1d1e;
+  }
 
+  nav .form-inline .btn{
+    border: 4px solid white;
+    background-color: black;
+    border-radius: 0px;
+    width : 100px;
+    height : 35px
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px
+    text-align :center;
+    font-weight: bold;
+    background-color: #1d1d1e;
+  }
 
+  nav .dropdown a{
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: lowercase;
+  }
+  .container-fluid .menu p{
+    margin-top: 150px;
+    padding : 90px;
+    border : 15px solid white;
+    border-left : none;
+    border-right: none;
+    color : white;
+    font-size: 20px;
+  }
 
+  .container-fluid .row img{
+    width:100%;
+  }
 
+  .container-fluid .menu i{
+    font-size: 40px;
+  }
+  .container-fluid .menu span{
+    font-size: 40px;
+    font-weight: bold;
+  }
 
+  .container-fluid .menu a:hover{
+    text-decoration: none;
+  }
 
-
-
-
-
-
-
-
-
-
+  .container-fluid .menu i:hover{
+    color : #d8383f;
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -199,10 +254,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
+@media
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
