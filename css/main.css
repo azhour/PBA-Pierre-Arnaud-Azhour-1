@@ -110,19 +110,21 @@ textarea {
   margin: auto;
   text-align: left;
 }
+
 .profil {
   font-size: 1.0rem;
   text-transform: uppercase;
-  line-height: 0px;
-  margin-top: 40px;
-  margin-left: 20px;
+  line-height: 0;
+  margin-top: 25%;
+  margin-left: 10%;
 }
+
 .title {
   font-size: 1.6rem;
   text-transform: uppercase;
   font-family: "lovelo";
-  line-height: 20px;
-  margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 10%;
 }
 
 .text:hover {
@@ -149,6 +151,57 @@ textarea {
   background-image: url(../img/Enseignant.jpg);
 }
 
+/* ========================================================================== */
+
+.visit {
+  height: 140px;
+  background-color: #1D1D1E;
+}
+
+h2 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3%;
+  font-family: "Biko";
+  padding-top: 5%;
+  font-weight: bold;
+}
+
+.icon-pba {
+  width: 5%;
+  position: absolute;
+  left: 32%;
+  top: 87%;
+}
+
+.icon-triangle {
+  width: 15%;
+  position: relative;
+  left: 42%;
+}
+
+.BG {
+  height: 70vh;
+  width: 25%;
+  background-size: cover;
+}
+.BG {
+  background-image: url(../img/Beaux-Gosses.jpg);
+}
+
+.bg-white {
+  width: 70%;
+  height: 30%;
+  position: relative;
+  left: 15%;
+  top: 48%;
+  text-align: left;
+}
+.time {
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
