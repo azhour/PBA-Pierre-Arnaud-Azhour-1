@@ -97,10 +97,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*navbar*/
+
   nav{
     background-color: #1d1d1e;
-    margin : 0;
-    position: fixed;
   }
 
   nav a{
@@ -109,9 +109,15 @@ textarea {
     font-size: 16px;
     font-weight: bold;
   }
-nav .collapse ul li a:hover{
-  color:#d8383f;
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: red;
 }
+
+.nav-item a.nav-link:hover{
+    color: #d8383f!important;
+    transition: 0.5s;
+}
+
   nav .form-inline .form-control{
     border: 4px solid white;
     background-color: black;
@@ -119,6 +125,10 @@ nav .collapse ul li a:hover{
     width : 150px;
     height : 35px;
     background-color: #1d1d1e;
+  }
+
+  nav .form-inline .form-control:hover{
+    border: 4px solid #d8383f!important;
   }
 
   nav .form-inline .btn{
@@ -134,11 +144,18 @@ nav .collapse ul li a:hover{
     background-color: #1d1d1e;
   }
 
+  nav .form-inline .btn:hover{
+    border: 4px solid #d8383f!important;
+  }
+
   nav .dropdown a{
     font-size: 15px;
     font-weight: lighter;
     text-transform: lowercase;
   }
+
+/*1st part*/
+
   .container-fluid .menu p{
     margin-top: 150px;
     padding : 90px;
@@ -167,7 +184,104 @@ nav .collapse ul li a:hover{
 
   .container-fluid .menu i:hover{
     color : #d8383f;
+    transition: 0.5s
   }
+
+  .container-fluid .downarrow i{
+    margin:auto;
+  }
+
+  .container-fluid .downarrow i:hover{
+    color: #d8383f!important;
+    transition: 0.5s;
+  }
+
+/*Carousel part*/
+
+  .carousel-inner .carousel-caption{
+    margin-top: 150px;
+    padding : 90px;
+    border : 15px solid white;
+    border-left : none;
+    border-right: none;
+    color : white;
+    font-size: 20px;
+  }
+
+  .carousel-inner .carousel-item h1 i:hover{
+    color: #d8383f!important;
+    transition: 0.5s;
+  }
+
+  .carousel-inner .carousel-item h1{
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .carousel-inner .carousel-item span{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 40px;
+  }
+
+  /*4 keys*/
+
+  .presentoeuvre{
+    background-color: #1d1d1e;
+  }
+
+  .presentoeuvre h1,p{
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  .presentoeuvre p{
+    font-size:20px;
+  }
+
+/*Oeuvres*/
+
+.bosch, .madone, .miroir, .perspective{
+  height: 80vh;
+  background-size: cover;
+}
+
+.container-fluid .text{
+  margin-top: 250px;
+  margin-left: 70px;
+  color : black;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.container-fluid .text .title{
+  font-size: 30px;
+  width : 60%;
+  line-height: 30px;
+}
+
+.container-fluid .text .profil{
+  font-size: 20px;
+  width : 65%;
+  line-height: 30px;
+}
+
+
+.bosch{
+  background-image: url(../img/LCDL.jpg);
+}
+
+.madone{
+  background-image: url(../img/EPM.jpg);
+}
+
+.miroir{
+  background-image: url(../img/LVLT.jpg);
+}
+
+.perspective{
+  background-image: url(../img/LFH.jpg);
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
