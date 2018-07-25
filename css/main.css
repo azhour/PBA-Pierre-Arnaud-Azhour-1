@@ -152,6 +152,22 @@ textarea {
     font-size: 15px;
     font-weight: lighter;
     text-transform: lowercase;
+    border-radius: 0px;
+  }
+
+  nav form input{
+    background-image: url(../img/search-solid.svg);
+    background-repeat: no-repeat;
+  }
+
+  nav .dropdown-menu{
+    background-color: #1d1d1e;
+    border-radius: 0px;
+  }
+
+  nav .dropdown-menu a:hover{
+    color : #d8383f!important;
+    background-color: #1d1d1e;
   }
 
 /*1st part*/
@@ -281,6 +297,54 @@ textarea {
 
 .perspective{
   background-image: url(../img/LFH.jpg);
+}
+
+/*MORE*/
+
+.social{
+  text-transform: uppercase;
+  background-color: #1d1d1e;
+  width : 100%;
+  color : white;
+  display: flex;
+  flex-direction: column;
+}
+
+.social a{
+  color : white;
+  border: 3px solid white;
+  margin : 40px 0px 10px 0px;
+  padding: 20px 50px 20px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.social .clone{
+  padding-left : 133px;
+}
+.social .insta{
+  border: none;
+  text-align: center;
+  font-size: 25px;
+}
+
+.social a:hover{
+  color : #d8383f;
+  transition: 0.5s;
+  text-decoration : none;
+  border-color: #d8383f;
+}
+
+.social .insta:hover{
+  color :white;
+}
+
+/*5pictures galery*/
+
+.container-fluid .lastgalery:hover{
+  background-color: red!important;
+  transition: 0.8s;
 }
 /* ==========================================================================
    Helper classes
