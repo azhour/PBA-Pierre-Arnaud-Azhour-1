@@ -342,7 +342,7 @@ textarea {
 
 /*5pictures galery*/
 
-.container-fluid .lastgalery:hover{
+.container-fluid .lastgalery a img:hover{
   background-color: red!important;
   transition: 0.8s;
 }
