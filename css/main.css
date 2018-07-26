@@ -97,6 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+<<<<<<< HEAD
 /*navbar*/
 
   nav{
@@ -289,6 +290,52 @@ textarea {
 
 .madone{
   background-image: url(../img/EPM.jpg);
+=======
+   footer {
+       width: 100%;
+       padding: 85px 90px 0px;
+       background-color: #1D1D1E;
+       color: #FFF;
+   }
+ .footer1 p, li {
+
+font-size: 11px;
+line-height: 1.8em;
+}
+footer h2{
+vertical-align: baseline;
+font-size: 21px !important;
+letter-spacing: 0.07em;
+margin-bottom: 15px !important;
+margin-top: 0px !important;
+}
+a{
+  color: inherit;
+}
+.info p{
+  line-height: 0.3em;
+  font-size: x-small;
+}
+a:hover{
+  color:#D8383F;
+  text-decoration: none;
+}
+.mecenat{
+  justify-content: right;
+}
+.mecenat p{
+margin-top: 14px;
+vertical-align: top;
+margin-right: 35px;
+font-size: 9px;
+color:#7B7C7E;
+}
+.contact{
+  margin-top: ;
+border-top: 1px solid white;
+padding-top: 20px;
+width: 98%;
+>>>>>>> c8e6fb47a16727d04174c52814395f039c2932a7
 }
 
 .miroir{
