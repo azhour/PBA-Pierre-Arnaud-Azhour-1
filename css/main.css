@@ -92,9 +92,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.container-fluid-visite {
-  display: grid;
-}
 
 .individual, .group, .family, .student, .teacher {
   height: 80vh;
@@ -270,7 +267,6 @@ textarea {
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
-  text-align: left;
 }
 
 .oeuvre1, .oeuvre2, .oeuvre3 {
@@ -279,15 +275,16 @@ textarea {
   margin-left: 7%;
   margin-top: 2%;
   margin-bottom: 5%;
+  background-size: cover;
 }
 
-.title-oeuvre, .tome-oeuvre {
+.text-oeuvre {
   text-align: right;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
 .time-oeuvre {
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Lovelo";
 }
 
@@ -296,7 +293,9 @@ textarea {
   font-family: "biko";
   font-weight: bold;
 }
-
+.title-oeuvre {
+  line-height: 15px;
+}
 .oeuvre1 {
   background-image: url(../img/4-oeuvres.jpg);
 }
@@ -309,6 +308,18 @@ textarea {
   background-image: url(../img/12-oeuvres.jpg);
 }
 
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
