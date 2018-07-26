@@ -92,7 +92,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
 .individual, .group, .family, .student, .teacher {
   height: 80vh;
   width: 20%;
@@ -293,9 +292,11 @@ textarea {
   font-family: "biko";
   font-weight: bold;
 }
+
 .title-oeuvre {
   line-height: 15px;
 }
+
 .oeuvre1 {
   background-image: url(../img/4-oeuvres.jpg);
 }
@@ -308,18 +309,74 @@ textarea {
   background-image: url(../img/12-oeuvres.jpg);
 }
 
+/* =============== last Part ================================================ */
+
+.bandeau-mobile {
+  position: relative;
+  min-height: 150px;
+  width: 100%;
+  background-color: #D8383F;
+  color: #FFF;
+  text-align: center;
+}
+
+.bandeau-mobile p {
+  font-size: 24px;
+  margin-left: 42%;
+  vertical-align: middle;
+  padding-top: 51px;
+  text-align: left;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.bandeau-mobile .title-bandeau .app-mobile {
+  font-family: "lovelo";
+}
+
+.icon-tablet, .icon-mobile {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-tablet:hover, .icon-mobile:hover {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-tablet {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/tab.png);
+}
+
+.icon-mobile {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mobile.png);
+}
+
+.icon-tablet:hover {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/tab-hover.png);
+}
+
+.icon-tablet:hover {
+  width: 100%;
+  background-image: url(../img/mobile-hover.png);
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media (min-width: 576px) {
+@media (min-width: 576px) {}
 
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 768px) {
-
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
