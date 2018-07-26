@@ -96,9 +96,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body{
-  font-family : 'lovelo';
-}
+
+
 /*navbar*/
 
   nav{
@@ -119,6 +118,125 @@ body{
 }
 
  /* footer */
+
+
+  .container-fluid .menu p{
+    margin-top: 150px;
+    padding : 90px;
+    border : 15px solid white;
+    border-left : none;
+    border-right: none;
+    color : white;
+    font-size: 20px;
+  }
+
+  .container-fluid .row img{
+    width:100%;
+  }
+
+  .container-fluid .menu i{
+    font-size: 40px;
+  }
+  .container-fluid .menu span{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .container-fluid .menu a:hover{
+    text-decoration: none;
+  }
+
+  .container-fluid .menu i:hover{
+    color : #d8383f;
+    transition: 0.5s
+  }
+
+  .container-fluid .downarrow i{
+    margin:auto;
+  }
+
+  .container-fluid .downarrow i:hover{
+    color: #d8383f!important;
+    transition: 0.5s;
+  }
+
+/*Carousel part*/
+
+  .carousel-inner .carousel-caption{
+    margin-top: 150px;
+    padding : 90px;
+    border : 15px solid white;
+    border-left : none;
+    border-right: none;
+    color : white;
+    font-size: 20px;
+  }
+
+  .carousel-inner .carousel-item h1 i:hover{
+    color: #d8383f!important;
+    transition: 0.5s;
+  }
+
+  .carousel-inner .carousel-item h1{
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .carousel-inner .carousel-item span{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 40px;
+  }
+
+  /*4 keys*/
+
+  .presentoeuvre{
+    background-color: #1d1d1e;
+  }
+
+  .presentoeuvre h1,p{
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  .presentoeuvre p{
+    font-size:20px;
+  }
+
+/*Oeuvres*/
+
+.bosch, .madone, .miroir, .perspective{
+  height: 80vh;
+  background-size: cover;
+}
+
+.container-fluid .text{
+  margin-top: 250px;
+  margin-left: 70px;
+  color : black;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.container-fluid .text .title{
+  font-size: 30px;
+  width : 60%;
+  line-height: 30px;
+}
+
+.container-fluid .text .profil{
+  font-size: 20px;
+  width : 65%;
+  line-height: 30px;
+}
+
+
+.bosch{
+  background-image: url(../img/LCDL.jpg);
+}
+
+.madone{
+  background-image: url(../img/EPM.jpg);
 
    footer {
        width: 100%;
@@ -164,15 +282,7 @@ color:#7B7C7E;
 border-top: 1px solid white;
 padding-top: 20px;
 width: 98%;
-}
 
-
-.bosch{
-  background-image: url(../img/LCDL.jpg);
-}
-
-.madone{
-  background-image: url(../img/EPM.jpg);
 }
 
 .miroir{
@@ -224,12 +334,8 @@ width: 98%;
   color :white;
 }
 
-/*5pictures galery*/
 
-.container-fluid .lastgalery a img:hover{
-  background-color: red!important;
-  transition: 0.8s;
-}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
