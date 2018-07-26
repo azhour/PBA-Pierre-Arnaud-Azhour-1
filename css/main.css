@@ -96,6 +96,29 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+  font-family : 'lovelo';
+}
+/*navbar*/
+
+  nav{
+    background-color: #1d1d1e;
+  }
+
+  nav .titre img{
+    width : 100%;
+  }
+  nav a{
+    font-family: 'lovelo', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: red;
+}
+
+ /* footer */
 
    footer {
        width: 100%;
@@ -136,7 +159,7 @@ margin-right: 35px;
 font-size: 9px;
 color:#7B7C7E;
 }
-.contact{
+.contact{     /* footer */
   margin-top: ;
 border-top: 1px solid white;
 padding-top: 20px;
@@ -144,14 +167,69 @@ width: 98%;
 }
 
 
+.bosch{
+  background-image: url(../img/LCDL.jpg);
+}
 
+.madone{
+  background-image: url(../img/EPM.jpg);
+}
 
+.miroir{
+  background-image: url(../img/LVLT.jpg);
+}
 
+.perspective{
+  background-image: url(../img/LFH.jpg);
+}
 
+/*MORE*/
 
+.social{
+  text-transform: uppercase;
+  background-color: #1d1d1e;
+  width : 100%;
+  color : white;
+  display: flex;
+  flex-direction: column;
+}
 
+.social a{
+  color : white;
+  border: 3px solid white;
+  margin : 40px 0px 10px 0px;
+  padding: 20px 50px 20px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
 
+.social .clone{
+  padding-left : 133px;
+}
+.social .insta{
+  border: none;
+  text-align: center;
+  font-size: 25px;
+}
 
+.social a:hover{
+  color : #d8383f;
+  transition: 0.5s;
+  text-decoration : none;
+  border-color: #d8383f;
+}
+
+.social .insta:hover{
+  color :white;
+}
+
+/*5pictures galery*/
+
+.container-fluid .lastgalery a img:hover{
+  background-color: red!important;
+  transition: 0.8s;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -238,10 +316,157 @@ width: 98%;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 980px){
+
+/*NAV*/
+  nav .navbar-nav .nav-item a{
+    text-align: center;
+    margin-top: 20px;
+    border : 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  nav .form-inline input, .logo{
+    display:none;
+  }
+
+  nav .searchinput{
+    display: none;
+  }
+
+  nav .btn{
+    margin-left : 95px;
+  }
+
+  /*carousel*/
+  .container-fluid .imgback{
+    height : 95vh;
+  }
+  .container-fluid .menu{
+    flex-direction: column;
+    height : 2%;
+    font-size: 20px;
+  }
+  .container-fluid .menu i{
+    font-size: 30px;
+  }
+  .container-fluid .menu span{
+    font-size: 20px;
+  }
+
+  .container-fluid .menu p{
+    border : 10px solid white;
+    margin : 0;
+    border-left: none;
+    border-right:none;
+    padding : 10px;
 }
 
+.container-fluid .downarrow{
+  display : none;
+}
+
+/*carousel*/
+
+.carousel img{
+  height : 65vh;
+}
+/*theme*/
+
+.container-fluid .text{
+  margin-top: 80px;
+  margin-left: 70px;
+  width : 60%;
+  color : black;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.container-fluid .text .title{
+  font-size: 30px;
+  width : 60%;
+  line-height: 30px;
+}
+
+.container-fluid .text .profil{
+  font-size: 20px;
+  width : 65%;
+  line-height: 30px;
+}
+
+/*social*/
+
+.social{
+  text-transform: uppercase;
+  background-color: #1d1d1e;
+  width : 100%;
+  color : white;
+  display: flex;
+  flex-direction: column;
+}
+
+.social a{
+  color : white;
+  border: 3px solid white;
+  margin : 40px 0px 10px 0px;
+  padding: 20px 20px 20px 50px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align:center;
+
+}
+
+.social .clone{
+  padding-left : 3px;
+}
+.social .insta{
+  border: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*lastgalery*/
+
+.container-fluid .lastgalery{
+  width : 100%;
+}
+
+}
+
+@media only screen and (min-width: 981px) and (max-width:1280px){
+
+.container-fluid .lastgalery .lastone{
+  display: none;
+}
+
+.container-fluid .lastgalery{
+  width : 25%;
+}
+
+.container-fluid .text{
+  margin-left: 70px;
+  width : 80%;
+  color : black;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.container-fluid .text .title{
+  font-size: 30px;
+  width : 60%;
+  line-height: 30px;
+}
+
+.container-fluid .text .profil{
+  font-size: 20px;
+  width : 65%;
+  line-height: 30px;
+}
+
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
