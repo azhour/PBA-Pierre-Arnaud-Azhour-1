@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 /*
@@ -27,13 +27,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 /*
@@ -41,12 +41,12 @@ html {
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /*
@@ -55,8 +55,13 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio, canvas, iframe, img, svg, video {
-  vertical-align: middle;
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
 }
 
 /*
@@ -64,9 +69,9 @@ audio, canvas, iframe, img, svg, video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -74,7 +79,7 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 /* ==========================================================================
@@ -82,38 +87,147 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+
 .individual, .group, .family, .student, .teacher {
+
+
+/*navbar*/
+
+  nav{
+    background-color: #1d1d1e;
+  }
+
+  nav .titre img{
+    width : 100%;
+  }
+  nav a{
+    font-family: 'lovelo', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: red;
+}
+
+ /* footer */
+
+
+  .container-fluid .menu p{
+    margin-top: 150px;
+    padding : 90px;
+    border : 15px solid white;
+    border-left : none;
+    border-right: none;
+    color : white;
+    font-size: 20px;
+  }
+
+  .container-fluid .row img{
+    width:100%;
+  }
+
+  .container-fluid .menu i{
+    font-size: 40px;
+  }
+  .container-fluid .menu span{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .container-fluid .menu a:hover{
+    text-decoration: none;
+  }
+
+  .container-fluid .menu i:hover{
+    color : #d8383f;
+    transition: 0.5s
+  }
+
+  .container-fluid .downarrow i{
+    margin:auto;
+  }
+
+  .container-fluid .downarrow i:hover{
+    color: #d8383f!important;
+    transition: 0.5s;
+  }
+
+/*Carousel part*/
+
+  .carousel-inner .carousel-caption{
+    margin-top: 150px;
+    padding : 90px;
+    border : 15px solid white;
+    border-left : none;
+    border-right: none;
+    color : white;
+    font-size: 20px;
+  }
+
+  .carousel-inner .carousel-item h1 i:hover{
+    color: #d8383f!important;
+    transition: 0.5s;
+  }
+
+  .carousel-inner .carousel-item h1{
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .carousel-inner .carousel-item span{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 40px;
+  }
+
+  /*4 keys*/
+
+  .presentoeuvre{
+    background-color: #1d1d1e;
+  }
+
+  .presentoeuvre h1,p{
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  .presentoeuvre p{
+    font-size:20px;
+  }
+
+/*Oeuvres*/
+
+.bosch, .madone, .miroir, .perspective{
+
   height: 80vh;
-  width: 20%;
   background-size: cover;
 }
 
-.bg-light {
-  width: 76%;
-  height: 25%;
-  opacity: 0.9;
-  position: relative;
-  margin: auto;
-  text-align: left;
+.container-fluid .text{
+  margin-top: 250px;
+  margin-left: 70px;
+  color : black;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
 }
 
-.profil {
-  font-size: 1.0rem;
-  text-transform: uppercase;
-  line-height: 0;
-  margin-top: 25%;
-  margin-left: 10%;
+.container-fluid .text .title{
+  font-size: 30px;
+  width : 60%;
+  line-height: 30px;
 }
+
 
 .title {
   font-size: 1.7rem;
@@ -121,49 +235,109 @@ textarea {
   font-family: "lovelo";
   margin-top: 20px;
   margin-left: 10%;
+
+.container-fluid .text .profil{
+  font-size: 20px;
+  width : 65%;
+  line-height: 30px;
+
 }
 
-.text:hover {
-  color: #d8383f;
+
+.bosch{
+  background-image: url(../img/LCDL.jpg);
 }
 
-.individual {
-  background-image: url(../img/Individuel.jpg);
+.madone{
+  background-image: url(../img/EPM.jpg);
+
+   footer {
+       width: 100%;
+       padding: 85px 90px 0px;
+       background-color: #1D1D1E;
+       color: #FFF;
+   }
+ .footer1 p, li {
+
+font-size: 11px;
+line-height: 1.8em;
+}
+footer h2{
+vertical-align: baseline;
+font-size: 21px !important;
+letter-spacing: 0.07em;
+margin-bottom: 15px !important;
+margin-top: 0px !important;
+}
+a{
+  color: inherit;
+}
+.info p{
+  line-height: 0.3em;
+  font-size: x-small;
+}
+a:hover{
+  color:#D8383F;
+  text-decoration: none;
+}
+.mecenat{
+  justify-content: right;
+}
+.mecenat p{
+margin-top: 14px;
+vertical-align: top;
+margin-right: 35px;
+font-size: 9px;
+color:#7B7C7E;
+}
+.contact{     /* footer */
+  margin-top: ;
+border-top: 1px solid white;
+padding-top: 20px;
+width: 98%;
+
 }
 
-.group {
-  background-image: url(../img/Groupe.jpg);
-}
-
-.family {
-  background-image: url(../img/Famille.jpg);
-}
-
-.student {
-  background-image: url(../img/Etudiant.jpg);
-}
-
-.teacher {
-  background-image: url(../img/Enseignant.jpg);
-}
 
 /* =============== Second Part ============================================== */
 
-.visit {
-  height: 140px;
-  background-color: #1D1D1E;
+.miroir{
+  background-image: url(../img/LVLT.jpg);
 }
+
+
+.perspective{
+  background-image: url(../img/LFH.jpg);
+}
+
 
 .visit-parcours {
   color: white;
   font-size: 24px;
   text-align: center;
+
+/*MORE*/
+
+.social{
+
   text-transform: uppercase;
-  letter-spacing: 0.3%;
-  font-family: "Biko";
-  padding-top: 5%;
-  font-weight: bold;
+  background-color: #1d1d1e;
+  width : 100%;
+  color : white;
+  display: flex;
+  flex-direction: column;
 }
+
+.social a{
+  color : white;
+  border: 3px solid white;
+  margin : 40px 0px 10px 0px;
+  padding: 20px 50px 20px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
 
 .icon-pba {
   width: 5%;
@@ -377,6 +551,26 @@ textarea {
 
 @media (min-width: 768px) {}
 
+.social .clone{
+  padding-left : 133px;
+}
+.social .insta{
+  border: none;
+  text-align: center;
+  font-size: 25px;
+}
+
+.social a:hover{
+  color : #d8383f;
+  transition: 0.5s;
+  text-decoration : none;
+  border-color: #d8383f;
+}
+
+.social .insta:hover{
+  color :white;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -386,7 +580,7 @@ textarea {
  */
 
 .hidden {
-  display: none !important;
+    display: none !important;
 }
 
 /*
@@ -399,16 +593,15 @@ textarea {
  */
 
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-  /* 1 */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
 }
 
 /*
@@ -417,14 +610,15 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit;
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
 }
 
 /*
@@ -432,7 +626,7 @@ textarea {
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 /*
@@ -447,15 +641,14 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before, .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
 /* ==========================================================================
@@ -464,12 +657,162 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 980px){
+
+/*NAV*/
+  nav .navbar-nav .nav-item a{
+    text-align: center;
+    margin-top: 20px;
+    border : 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  nav .form-inline input, .logo{
+    display:none;
+  }
+
+  nav .searchinput{
+    display: none;
+  }
+
+  nav .btn{
+    margin-left : 95px;
+  }
+
+  /*carousel*/
+  .container-fluid .imgback{
+    height : 95vh;
+  }
+  .container-fluid .menu{
+    flex-direction: column;
+    height : 2%;
+    font-size: 20px;
+  }
+  .container-fluid .menu i{
+    font-size: 30px;
+  }
+  .container-fluid .menu span{
+    font-size: 20px;
+  }
+
+  .container-fluid .menu p{
+    border : 10px solid white;
+    margin : 0;
+    border-left: none;
+    border-right:none;
+    padding : 10px;
 }
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.container-fluid .downarrow{
+  display : none;
+}
+
+/*carousel*/
+
+.carousel img{
+  height : 65vh;
+}
+/*theme*/
+
+.container-fluid .text{
+  margin-top: 80px;
+  margin-left: 70px;
+  width : 60%;
+  color : black;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.container-fluid .text .title{
+  font-size: 30px;
+  width : 60%;
+  line-height: 30px;
+}
+
+.container-fluid .text .profil{
+  font-size: 20px;
+  width : 65%;
+  line-height: 30px;
+}
+
+/*social*/
+
+.social{
+  text-transform: uppercase;
+  background-color: #1d1d1e;
+  width : 100%;
+  color : white;
+  display: flex;
+  flex-direction: column;
+}
+
+.social a{
+  color : white;
+  border: 3px solid white;
+  margin : 40px 0px 10px 0px;
+  padding: 20px 20px 20px 50px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align:center;
+
+}
+
+.social .clone{
+  padding-left : 3px;
+}
+.social .insta{
+  border: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*lastgalery*/
+
+.container-fluid .lastgalery{
+  width : 100%;
+}
+
+}
+
+@media only screen and (min-width: 981px) and (max-width:1280px){
+
+.container-fluid .lastgalery .lastone{
+  display: none;
+}
+
+.container-fluid .lastgalery{
+  width : 25%;
+}
+
+.container-fluid .text{
+  margin-left: 70px;
+  width : 80%;
+  color : black;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.container-fluid .text .title{
+  font-size: 30px;
+  width : 60%;
+  line-height: 30px;
+}
+
+.container-fluid .text .profil{
+  font-size: 20px;
+  width : 65%;
+  line-height: 30px;
+}
+
+}
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -479,52 +822,71 @@ textarea {
    ========================================================================== */
 
 @media print {
-  *, *:before, *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a, a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]:after, a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-  thead {
-    display: table-header-group;
-  }
-  tr, img {
-    page-break-inside: avoid;
-  }
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2, h3 {
-    page-break-after: avoid;
-  }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
