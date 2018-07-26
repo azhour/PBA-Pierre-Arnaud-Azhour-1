@@ -251,7 +251,7 @@ textarea {
 .madone{
   background-image: url(../img/EPM.jpg);
 
-   footer {
+
        width: 100%;
        padding: 85px 90px 0px;
        background-color: #1D1D1E;
@@ -262,7 +262,7 @@ textarea {
 font-size: 11px;
 line-height: 1.8em;
 }
-footer h2{
+.footer .subtitle{
 vertical-align: baseline;
 font-size: 21px !important;
 letter-spacing: 0.07em;
@@ -295,6 +295,7 @@ color:#7B7C7E;
 border-top: 1px solid white;
 padding-top: 20px;
 width: 98%;
+
 
 }
 
@@ -570,6 +571,17 @@ width: 98%;
 .social .insta:hover{
   color :white;
 }
+
+
+
+/*5pictures galery*/
+
+.container-fluid .lastgalery a img:hover{
+  background-color: red!important;
+  transition: 0.8s;
+}
+
+
 
 /* ==========================================================================
    Helper classes
