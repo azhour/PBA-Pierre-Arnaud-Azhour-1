@@ -98,6 +98,9 @@ textarea {
    ========================================================================== */
 
 
+.individual, .group, .family, .student, .teacher {
+
+
 /*navbar*/
 
   nav{
@@ -206,6 +209,7 @@ textarea {
 /*Oeuvres*/
 
 .bosch, .madone, .miroir, .perspective{
+
   height: 80vh;
   background-size: cover;
 }
@@ -224,10 +228,19 @@ textarea {
   line-height: 30px;
 }
 
+
+.title {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-family: "lovelo";
+  margin-top: 20px;
+  margin-left: 10%;
+
 .container-fluid .text .profil{
   font-size: 20px;
   width : 65%;
   line-height: 30px;
+
 }
 
 
@@ -285,17 +298,28 @@ width: 98%;
 
 }
 
+
+/* =============== Second Part ============================================== */
+
 .miroir{
   background-image: url(../img/LVLT.jpg);
 }
+
 
 .perspective{
   background-image: url(../img/LFH.jpg);
 }
 
+
+.visit-parcours {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+
 /*MORE*/
 
 .social{
+
   text-transform: uppercase;
   background-color: #1d1d1e;
   width : 100%;
@@ -313,6 +337,219 @@ width: 98%;
   font-weight: bold;
   letter-spacing: 4px;
 }
+
+
+.icon-pba {
+  width: 5%;
+  position: absolute;
+  left: 32%;
+  top: 35%;
+}
+
+.icon-triangle {
+  width: 15%;
+  position: relative;
+  left: 42.5%;
+}
+
+/* =============== Third Part =============================================== */
+
+.BG, .grand-bleu, .love, .table, .angel, .beast, .blonde, .architecture {
+  height: 75vh;
+  width: 25%;
+  background-size: cover;
+}
+
+.BG {
+  background-image: url(../img/Beaux-Gosses.jpg);
+}
+
+.grand-bleu {
+  background-image: url(../img/Le-grand-bleu.jpg);
+}
+
+.love {
+  background-image: url(../img/Love-etc.jpg);
+}
+
+.table {
+  background-image: url(../img/A-Table-!.jpg);
+}
+
+.angel {
+  background-image: url(../img/Anges-et-Demons.jpg);
+}
+
+.beast {
+  background-image: url(../img/Histoires-de-betes.jpg);
+}
+
+.blonde {
+  background-image: url(../img/Blondes-et-brunes.jpg);
+}
+
+.architecture {
+  background-image: url(../img/Ar-t-chitecture.jpg);
+}
+
+.bg-white {
+  width: 70%;
+  height: 35%;
+  position: relative;
+  margin: auto;
+  text-align: left;
+}
+
+.time {
+  margin-left: 7%;
+  color: #868687;
+  font-size: 16px;
+  position: relative;
+  bottom: 16%;
+}
+
+.clock {
+  width: 15%;
+}
+
+.min {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.time:hover {
+  color: #d8383f;
+}
+
+/* =============== Tourth Part =============================================== */
+
+.incontournable {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3%;
+  font-family: "Lovelo";
+  padding-top: 4%;
+  font-weight: bold;
+}
+
+.bg-oeuvre {
+  width: 70%;
+  height: 35%;
+  background-color: white;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.oeuvre1, .oeuvre2, .oeuvre3 {
+  width: 20%;
+  height: 65vh;
+  margin-left: 7%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  background-size: cover;
+}
+
+.text-oeuvre {
+  text-align: right;
+  margin-right: 10%;
+}
+
+.time-oeuvre {
+  font-size: 50px;
+  font-family: "Lovelo";
+}
+
+.min-oeuvre {
+  font-size: 40px;
+  font-family: "biko";
+  font-weight: bold;
+}
+
+.title-oeuvre {
+  line-height: 15px;
+}
+
+.oeuvre1 {
+  background-image: url(../img/4-oeuvres.jpg);
+}
+
+.oeuvre2 {
+  background-image: url(../img/8-oeuvres.jpg);
+}
+
+.oeuvre3 {
+  background-image: url(../img/12-oeuvres.jpg);
+}
+
+/* =============== last Part ================================================ */
+
+.bandeau-mobile {
+  position: relative;
+  min-height: 150px;
+  width: 100%;
+  background-color: #D8383F;
+  color: #FFF;
+  text-align: center;
+}
+
+.bandeau-mobile p {
+  font-size: 24px;
+  margin-left: 42%;
+  vertical-align: middle;
+  padding-top: 51px;
+  text-align: left;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.bandeau-mobile .title-bandeau .app-mobile {
+  font-family: "lovelo";
+}
+
+.icon-tablet, .icon-mobile {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-tablet:hover, .icon-mobile:hover {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-tablet {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/tab.png);
+}
+
+.icon-mobile {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mobile.png);
+}
+
+.icon-tablet:hover {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/tab-hover.png);
+}
+
+.icon-tablet:hover {
+  width: 100%;
+  background-image: url(../img/mobile-hover.png);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
 
 .social .clone{
   padding-left : 133px;
@@ -333,8 +570,6 @@ width: 98%;
 .social .insta:hover{
   color :white;
 }
-
-
 
 /* ==========================================================================
    Helper classes
