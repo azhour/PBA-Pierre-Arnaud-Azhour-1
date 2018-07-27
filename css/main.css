@@ -512,7 +512,7 @@ body{
 }
 /*theme*/
 
-.container-fluid .text{
+.container-fluid .textar{
   margin-top: 80px;
   margin-left: 70px;
   width : 60%;
@@ -521,13 +521,13 @@ body{
   padding: 5px 5px 5px 5px;
 }
 
-.container-fluid .text .title{
+.container-fluid .textar .title{
   font-size: 30px;
   width : 60%;
   line-height: 30px;
 }
 
-.container-fluid .text .profil{
+.container-fluid .textar .profil{
   font-size: 20px;
   width : 65%;
   line-height: 30px;
@@ -583,7 +583,7 @@ body{
   width : 25%;
 }
 
-.container-fluid .text{
+.container-fluid .textar{
   margin-left: 70px;
   width : 80%;
   color : black;
@@ -591,13 +591,13 @@ body{
   padding: 5px 5px 5px 5px;
 }
 
-.container-fluid .text .title{
+.container-fluid .textar .title{
   font-size: 30px;
   width : 60%;
   line-height: 30px;
 }
 
-.container-fluid .text .profil{
+.container-fluid .textar .profil{
   font-size: 20px;
   width : 65%;
   line-height: 30px;
