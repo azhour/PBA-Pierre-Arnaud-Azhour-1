@@ -97,6 +97,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  font-family : 'lovelo';
+}
+
+
 
 .individual, .group, .family, .student, .teacher {
 
@@ -120,8 +125,78 @@ textarea {
     color: red;
 }
 
- /* footer */
+.nav-item a.nav-link:hover{
+    color: #d8383f!important;
+    transition: 0.5s;
+}
 
+
+  nav .searchinput form input{
+    position: relative;
+    border-radius: 0px;
+    background-color: #1d1d1e;
+    border : 4px solid white;
+  }
+
+  nav .searchinput form button{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 4px;
+    color : white;
+    background-color: #1d1d1e;
+    border : none;
+  }
+
+  nav .searchinput form input:hover{
+    border : 4px solid red;
+  }
+
+  nav .btn .btn{
+    border: 4px solid white;
+    background-color: black;
+    border-radius: 0px;
+    width : 100px;
+    height : 35px
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px
+    text-align :center;
+    font-weight: bold;
+    background-color: #1d1d1e;
+  }
+
+  nav .btn .btn:hover{
+    border: 4px solid #d8383f!important;
+  }
+
+  nav .searchinput form button:hover{
+    color : #d8383f!important;
+    background-color: #1d1d1e;;
+  }
+
+  nav .searchinput form button:hover{
+    color : #d8383f!important;
+    background-color: #1d1d1e;
+    transition: 0.6s;
+  }
+
+  nav .dropdown a{
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: lowercase;
+    border-radius: 0px;
+  }
+
+  nav .dropdown-menu{
+    background-color: #1d1d1e;
+    border-radius: 0px;
+  }
+
+  nav .dropdown-menu a:hover{
+    color : #d8383f!important;
+    background-color: #1d1d1e;
+  }
+
+/*1st part*/
 
   .container-fluid .menu p{
     margin-top: 150px;
@@ -131,6 +206,7 @@ textarea {
     border-right: none;
     color : white;
     font-size: 20px;
+    margin-left: 45px;
   }
 
   .container-fluid .row img{
@@ -217,6 +293,7 @@ textarea {
 .container-fluid .text{
   margin-top: 250px;
   margin-left: 70px;
+  width : 60%;
   color : black;
   background-color: white;
   padding: 5px 5px 5px 5px;
@@ -250,6 +327,8 @@ textarea {
 
 .madone{
   background-image: url(../img/EPM.jpg);
+
+
 
 
        width: 100%;
@@ -572,14 +651,21 @@ width: 98%;
   color :white;
 }
 
+/*5pictures galery*/
+
+
 
 
 /*5pictures galery*/
+
 
 .container-fluid .lastgalery a img:hover{
   background-color: red!important;
   transition: 0.8s;
 }
+
+
+
 
 
 
