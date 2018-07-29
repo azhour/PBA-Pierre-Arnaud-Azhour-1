@@ -262,7 +262,7 @@ nav .dropdown-menu a:hover {
   background-color: #1d1d1e;
 }
 
-.presentoeuvre h1, p {
+.presentoeuvre .presentp{ {
   font-weight: bold;
   font-size: 35px;
 }
@@ -319,8 +319,6 @@ nav .dropdown-menu a:hover {
 .social .insta:hover {
   color: white;
 }
-
-/*5pictures galery*/
 
 /*5pictures galery*/
 
@@ -586,7 +584,7 @@ nav .dropdown-menu a:hover {
   line-height: 25px;
 }
 
-.bandeau-mobile .title-bandeau .app-mobile {
+.bandeau-mobile, .title-bandeau, .app-mobile {
   font-family: "lovelo";
 }
 .icon-visit {
@@ -613,14 +611,6 @@ nav .dropdown-menu a:hover {
 }
 
 /* End of CSS for visit.html's page */
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media (min-width: 576px) {}
-
-@media (min-width: 768px) {}
 
 /* ==========================================================================
    Helper classes
