@@ -23,6 +23,59 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-custom p-0 m-0">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse my-" id="navbarSupportedContent">
+      <div class="titre img-fluid ml-2 mr-2">
+        <img src="img/PBAtitrenav.png" alt ="palais des beaux arts">
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#">Collections<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="visite.html">Visiter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="agenda.html">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Infos</a>
+        </li>
+      </ul>
+
+      <div class="searchinput">
+              <form class="searchEngine" action="/Collections/Chefs-d-OEuvre" method="get">
+                  <input class="ui-autocomplete-input" id="keywords" autocomplete="off" placeholder="" name="k" value="" type="text">
+                  <button type="submit" class="buttonInput">
+                    <i class="fas fa-search"></i>
+                  </button>
+              </form>
+    </div>
+      <div class="btn">
+        <button class="btn btn-outline-success my-2 mx-auto my-sm-0 mr-2 text-light" type="submit">MON PBA</button>
+      </div>
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Français
+        </a>
+        <div class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-light" href="">English</a>
+          <a class="dropdown-item text-light" href="">Dutch</a>
+        </div>
+      </li>
+    </ul>
+      <div class="logo img-fluid">
+        <a href=""><img src="img/iconelille.png" alt ="icone lille"></a>
+      </div>
+    </div>
+  </nav>
   <div class="headerAgenda">
     <img  class="calendar my-3" src="img/icons8-today-50.png" alt="">
 <!-- <i class="far fa-calendar-alt calendrier"></i> -->
@@ -47,86 +100,8 @@
     </div>
   </div>
 
-<!-- <div class=" container row">
-  <div class="imgAgenda imgAgenda1 col-12 col-lg-2"></div>
- <div class=" col-12 col-lg-9 ">
-<p class="text-agenda">Le 22 juillet 2018 -
-<span class="categorie1">JEUNE PUBLIC</span><br>
-VISITE À CROQUER</p>
-<p class="text-agenda2 font-weight-bold">À 15 h 30. 8 €/ 4 € - Gratuit - de 18 ans.</p>
-</div>
-</div>
 
-<div class="row">
-<div class=" imgAgenda imgAgenda2 col-12 col-lg-2"></div>
-<div class="col-12 col-lg-9">
-<p class="text-agenda">Le 25 juillet 2018 -
-<span class="categorie2">VISITE</span><br>
-VISITE PRESTO</p>
-<p class="text-agenda2 font-weight-bold">À 12h30. 1€ + droit d'entrée- Durée: 30mn.</p>
-</div>
 
-<div class="row container">
-<div class="imgAgenda imgAgenda3 col-12 col-lg-2"></div>
-<div class="col-12 col-lg-9">
-<p class="text-agenda">Le 26 juillet 2018 -
-<span class="categorie2">VISITE</span><br>
-LEÇON D'ART</p>
-<p class="text-agenda2 font-weight-bold">À 14h30.4€ + droit d'entrée.</p>
-</div>
-
-<div class="row container">
-<div class="imgAgenda imgAgenda4 col-12 col-lg-2"></div>
-<div class="col-12 col-lg-9">
-<p class="text-agenda">Le 27 juillet 2018 -
-<span class="categorie2">VISITE</span><br>
-VISITE PRESTO
-<p class="text-agenda2 font-weight-bold">À 12h30.1€ + droit d'entrée - Durée: 30mn</p>
-</div>
-</div>
-
-<div class="container row">
-<div class="imgAgenda imgAgenda5 col-12 col-lg-2"></div>
-<div class="col-12 col-lg-9">
-<p class="text-agenda">Le 29 juillet 2018 -
-<span class="categorie1">JEUNE PUBLIC</span><br>
-A PAS DE LOUP</p>
-<p class="text-agenda2 font-weight-bold">De 15h30 à 17h30. Gratuit pour les - de 18 ans.Autres: 7€/4€.</p>
-</div>
-
-<div class="container row">
-<div class="imgAgenda imgAgenda6 col-12 col-lg-2"></div>
-<div class="col-12 col-lg-9">
-<p class="text-agenda">Le 1 AOÛT 2018 -
-<span class="categorie2">VISITE</span><br>
-VISITE PRESTO</p>
-<p class="text-agenda2 font-weight-bold">À 12h30.1€ + droit d'entrée - Durée:30mn</p>
-</div>
-</div>
-
-<div class="container row">
-<div class="imgAgenda imgAgenda7 col-12 col-lg-2"></div>
-<div class="col-12 col-lg-9">
-<p class="text-agenda">Le 2 AOÛT 2018 -
-<span class="categorie2">VISITE</span><br>
-LEÇON D'ART</p>
-<p class="text-agenda2 font-weight-bold">À 14h30.4€ + droit d'entrée.</p>
-</div>
-
-<div class="container row">
-<div class="imgAgenda imgAgenda8 col-12 col-lg-2"></div>
-<div class="col-12 col-lg-9">
-<p class="text-agenda">Le 3 AOÛT 2018 -
-<span class="categorie2">VISITE</span><br>
-VISITE PRESTO</p>
-<p class="text-agenda2 font-weight-bold">À 12h30.1€+droit d'entrée - Durée:30mn</p>
-</div>
-</div> -->
-
-<!-- <div class="button-next row">
-  <div class="button-next1 col-9"><a href="">SUIVANT</a></div>
-  <img src="https://png.icons8.com/metro/40/000000/forward.png">
-</div> -->
 
 <!-- <footer class="container footer">
    <div class="footer1 mx-auto">
@@ -184,51 +159,51 @@ VISITE PRESTO</p>
  </div>
 </footer> -->
 
-  <ul class="list-unstyled mx-5  ">
-    <li class="media my-5 ">
-      <img class=" mr-5" src="img/image1.jpg" alt="Generic placeholder image" width="185" height="274">
-      <div class="media-body green ml-5 pt-3 ">
+  <ul class="list-unstyled mx-5 ">
+    <li class="media my-5 row ">
+      <img class=" mr-5 col-12 col-md-6 col-lg-2" src="img/image1.jpg" alt="Generic placeholder image" width="185" height="274">
+      <div class="media-body green  pt-3 border-top border-success ">
         <h5 class="mt-0 mb-1 my-3">Le 22 juillet 2018 - <span class="categorie1"> JEUNE PUBLIC</span><br> VISITE A CROQUER</h5>
         <p class="font-weight-bold">A 15h30.8€/4€ - Gratuit - de 18 ans.</p>
-        <div class="textagendalg ">
+        <div class="textagendalg d-none d-lg-block">
         <p>Une visite familiale pour découvrir le musée en compagnie d'un plasticien.</p>
-        <p class="font-weight-bold">Croquis, modelage, découpage-collage... une initiation ludique aux arts plastiques.</p>
+        <p class="font-weight-bold ">Croquis, modelage, découpage-collage... une initiation ludique aux arts plastiques.</p>
         </div>
       </div>
     </li>
 
-    <li class="media my-5 ">
-      <img class=" mr-5" src="img/image2.jpg" alt="Generic placeholder image" width="185" height="274">
-      <div class="media-body violet ml-5 pt-3">
+    <li class="media my-5 row ">
+      <img class=" mr-5 col-12 col-md-6 col-lg-2" src="img/image2.jpg" alt="Generic placeholder image" width="185" height="274">
+      <div class="media-body violet pt-3 border-top">
         <div class="borderAgenda borderAgenda1"></div>
         <h5 class="mt-0 mb-1 my-3">LE 25 JUILLET 2018 - <span class="categorie2">VISITE</span> <br> VISITE PRESTO</h5>
         <p class="font-weight-bold">A 12h30.1€ + droit d'entrée - Durée: 30 mn</p>
-        <div class="textAgendaLg">
+        <div class="textAgendaLg d-none d-lg-block">
         <p>Un tête à tête avec une œuvre différente chaque semaine.</p>
         <p class="font-weight-bold">En forêt de Fontainebleau, Constant Troyon</p>
         </div>
       </div>
     </li>
 
-    <li class="media my-5 ">
-      <img class="mr-5" src="img/image3.jpg" alt="Generic placeholder image " width="185" height="274px">
-      <div class="media-body violet ml-5 pt-3">
+    <li class="media my-5 row">
+      <img class="mr-5 col-12 col-md-6 col-lg-2" src="img/image3.jpg" alt="Generic placeholder image " width="185" height="274px">
+      <div class="media-body violet pt-3 border-top">
         <div class="borderAgenda borderAgenda2"></div>
         <h5 class="mt-0 mb-1 my-3">Le 26 JUILLET 2018 - <span class="categorie2"> VISITE</span> <br> LEÇON D'ART</h5>
         <p class="font-weight-bold">A 14h30.4€ + droit d'entrée.</p>
-        <div class="textAgendaLg ">
+        <div class="textAgendaLg d-none d-lg-block ">
         <p>Pour tous ceux qui veulent s'initier à l'histoire de l'art.</p>
         <p class="font-weight-bold">Sur le thème: Histoires d'eau (étangs, rivières, torrents)</p>
         </div>
       </div>
     </li>
 
-    <li class="media my-5 ">
-      <img class="mr-5 " src="img/image4.jpg" alt="Generic placeholder image" width="185" height="274">
-      <div class="media-body violet ml-5 pt-3">
+    <li class="media my-5 row">
+      <img class="mr-5 col-12 col-md-6 col-lg-2 " src="img/image4.jpg" alt="Generic placeholder image" width="185" height="274">
+      <div class="media-body violet pt-3 border-top">
         <h5 class="mt-0 mb-1 my-3"><strong>LE 27 JUILLET 2018</strong> - <span class="categorie2"> VISITE</span> <br> VISITE PRESTO</h5>
         <p class="font-weight-bold">A 12h30.1€ + droit d'entrée - Durée: 30 mn</p>
-        <div class="textAgendaLg ">
+        <div class="textAgendaLg d-none d-lg-block ">
         <p>Un tête à tête avec une œuvre différente chaque semaine.</p>
         <p class="font-weight-bold">En forêt de Fontainebleau, Constant Troyon</p>
         </div>
@@ -236,12 +211,12 @@ VISITE PRESTO</p>
 
     </li>
 
-    <li class="media my-5 ">
-      <img class="mr-5 " src="img/image5.jpg" alt="Generic placeholder image" width="185" height="274">
-      <div class="media-body green ml-5 pt-3">
+    <li class="media my-5 row ">
+      <img class="mr-5 col-12 col-md-6 col-lg-2" src="img/image5.jpg" alt="Generic placeholder image" width="185" height="274">
+      <div class="media-body green ml-5 pt-3 border-top border-success">
         <h5 class="mt-0 mb-1 my-3">LE 29 JUILLET 2018 - <span class="categorie1">JEUNE PUBLIC </span><br> A PAS DE LOUP</h5>
         <p class="font-weight-bold">De 15h30 à 17h30.Gratuit pour les - de 18 ans.Autres: 7€/4€.</p>
-        <div class="textAgendaLg ">
+        <div class="textAgendaLg d-none d-lg-block ">
         <p>Au cœur des collections, partez à la recherche du loup qui vous fera découvrir le musée en jouant !</p>
         <p class="font-weight-bold">Entrez, visitez, cherchez... et surtout: gare au loup!.</p>
         </div>
@@ -249,12 +224,12 @@ VISITE PRESTO</p>
 
     </li>
 
-    <li class="media my-5 ">
-      <img class="mr-5 " src="img/image6.jpg" alt="Generic placeholder image " width="185" height="274px">
-      <div class="media-body violet ml-5 pt-3">
+    <li class="media my-5 row ">
+      <img class="mr-5 col-12 col-md-6 col-lg-2 " src="img/image6.jpg" alt="Generic placeholder image " width="185" height="274px">
+      <div class="media-body violet ml-5 pt-3 border-top">
         <h5 class="mt-0 mb-1 my-3">LE 1 AOUT 2018 -<span class="categorie2"> VISITE</span> <br> VISITE PRESO</h5>
         <p class="font-weight-bold">A 12h30. 1€ + droit d'entrée - Durée: 30mn</p>
-        <div class="textAgendaLg ">
+        <div class="textAgendaLg d-none d-lg-block ">
         <p>Un tête à tête avec une œuvre différente chaque semaine.</p>
         <p class="font-weight-bold">La Famille de l'artiste, Chagall</p>
         </div>
@@ -262,12 +237,12 @@ VISITE PRESTO</p>
 
     </li>
 
-    <li class="media my-5 ">
-      <img class="mr-5 " src="img/image7.jpg" alt="Generic placeholder image" width="185" height="274">
-      <div class="media-body violet ml-5 pt-3">
+    <li class="media my-5 row ">
+      <img class="mr-5 col-12 col-md-6 col-lg-2 " src="img/image7.jpg" alt="Generic placeholder image" width="185" height="274">
+      <div class="media-body violet ml-5 pt-3 border-top">
         <h5 class="mt-0 mb-1 my-3">LE 2 AOUT 2018 - <span class="categorie2">VISITE </span><br> LEÇON D'ART</h5>
         <p class="font-weight-bold">A 14h30.4€ + droit d'entrée.</p>
-        <div class="textAgendaLg ">
+        <div class="textAgendaLg d-none d-lg-block">
         <p>Pour tous ceux qui veulent s'initier à l'histoire de l'art.</p>
         <p class="font-weight-bold">Sur le thème: Quelques objets précieux</p>
         </div>
@@ -275,12 +250,12 @@ VISITE PRESTO</p>
 
     </li>
 
-    <li class="media my-5 ">
-      <img class="mr-5 " src="img/image8.jpg" alt="Generic placeholder image" width="185" height="274">
-      <div class="media-body violet ml-5 pt-3">
+    <li class="media my-5 row ">
+      <img class="mr-5 col-12 col-md-6 col-lg-2" src="img/image8.jpg" alt="Generic placeholder image" width="185" height="274">
+      <div class="media-body violet ml-5 pt-3 border-top">
         <h5 class="mt-0 mb-1 my-3">LE 3 AOUT 2018 -<span class="categorie2"> VISITE </span><br> VISITE PRESTO</h5>
         <p class="font-weight-bold">A 12h30.1€+droit d'entrée - Durée: 30mn</p>
-        <div class="textAgendaLg  ">
+        <div class="textAgendaLg d-none d-lg-block  ">
         <p>Un tête à tête avec une œuvre différente chaque semaine.</p>
         <p class="font-weight-bold">La Famille de l'artiste, Chagall</p>
         </div>
@@ -289,11 +264,20 @@ VISITE PRESTO</p>
     </li>
   </ul>
 
+<div class="NumeroPage">
+<ul class="d-flex text-c">
+  <li class="border-left border-dark">1</li>
+  <li class="border-left border-dark">2</li>
+  <li class="border-left border-dark">3</li>
+  <li class="">4</li>
+</ul>
+
+</div>
 
 
-  <section class=" footerAgenda">
+  <section class="footerAgenda">
 
-    <div class="row footer1 mx-auto">
+    <div class="row footer1 mx-auto d-block">
     <div class="col-3 info">
       <img src="img/info.png" alt="icone info">
       <h2 class="my-4 font-weight-bold text-monospace subtitle">INFOS PRATIQUES </h2>
@@ -346,7 +330,8 @@ VISITE PRESTO</p>
     <p>SITE RÉALISÉ GRÂCE AU MÉCÉNAT DE:</p>
     <img class="ml-3"src="img/mecene.png" alt="logo of caisse d'épargne"  height="37">
   </div>
-</section> 
+</section>
+
   <script>$('.dropdown-toggle').dropdown()</script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
