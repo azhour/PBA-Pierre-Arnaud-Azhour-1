@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-
+  <link href="css/bootstrap.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -23,99 +23,299 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <div class="container-fluid">
-    <div class="row">
+  <!-- Header-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-custom p-0 m-0">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse my-" id="navbarSupportedContent">
+      <div class="titre img-fluid ml-2 mr-2">
+        <img src="img/PBAtitrenav.png" alt="palais des beaux arts">
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#">Collections<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="visite.html">Visiter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="agenda.html">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Infos</a>
+        </li>
+      </ul>
+
+      <div class="searchinput">
+        <form class="searchEngine" action="/Collections/Chefs-d-OEuvre" method="get">
+          <input class="ui-autocomplete-input" id="keywords" autocomplete="off" placeholder="" name="k" value="" type="text">
+          <button type="submit" class="buttonInput">
+                    <i class="fas fa-search"></i>
+                  </button>
+        </form>
+      </div>
+      <div class="btn">
+        <button class="btn btn-outline-success my-2 mx-auto my-sm-0 mr-2 text-light" type="submit">MON PBA</button>
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Français
+        </a>
+          <div class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light" href="">English</a>
+            <a class="dropdown-item text-light" href="">Dutch</a>
+          </div>
+        </li>
+      </ul>
+      <div class="logo img-fluid">
+        <a href=""><img src="img/iconelille.png" alt ="icone lille"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- End of Header -->
+  <!-- First part -->
+
+  <div class="container-fluid-visite">
+    <div class="row m-0">
       <div class="d-flex flex-row m-0 p-0 individual">
         <div class="bg-light">
-          <div class="text">
-            <p class="profil">Vous êtes un </p>
-            <p class="title">individuel</p>
+          <div class="text-firstpart">
+            <p class="profil-firstpart">Vous êtes un </p>
+            <p class="title-firstpart">individuel</p>
           </div>
         </div>
       </div>
       <div class="d-flex flex-row m-0 p-0 group">
         <div class="bg-light">
-          <div class="text">
-            <p class="profil">Vous êtes un </p>
-            <p class="title">groupe</p>
+          <div class="text-firstpart">
+            <p class="profil-firstpart">Vous êtes un </p>
+            <p class="title-firstpart">groupe</p>
           </div>
         </div>
       </div>
       <div class="d-flex flex-row m-0 p-0 family">
         <div class="bg-light">
-          <div class="text">
-            <p class="profil">Vous êtes une </p>
-            <p class="title">famille</p>
+          <div class="text-firstpart">
+            <p class="profil-firstpart">Vous êtes une </p>
+            <p class="title-firstpart">famille</p>
           </div>
         </div>
       </div>
       <div class="d-flex flex-row m-0 p-0 student">
         <div class="bg-light">
-          <div class="text">
-            <p class="profil">Vous êtes un </p>
-            <p class="title">étudiant</p>
+          <div class="text-firstpart">
+            <p class="profil-firstpart">Vous êtes un </p>
+            <p class="title-firstpart">étudiant</p>
           </div>
         </div>
       </div>
       <div class="d-flex flex-row m-0 p-0 teacher">
         <div class="bg-light">
-          <div class="text">
-            <p class="profil">Vous êtes un </p>
-            <p class="title">enseignant</p>
+          <div class="text-firstpart">
+            <p class="profil-firstpart">Vous êtes un </p>
+            <p class="title-firstpart">enseignant</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="visit">
+  <!-- End First part -->
+  <!-- Second part -->
+  <div class="col-sm 12 col-md-12 visit-secondpart">
     <div class="line-pba">
       <img class="icon-pba" src="img/icon-pba.png" alt="icone du site">
-      <h2>Parcours de visite</h2>
+      <h2 class="visit-parcours">Parcours de visite</h2>
     </div>
     <div class="icon-triangle">
       <img class="icon-triangle" src="img/triangle.png" alt="icone triangle">
     </div>
   </div>
+  <!-- End Second part -->
+  <!-- Third part -->
+  <div class="container-fluid-visite">
+    <div class="row m-0">
 
-  <div class="container-fluid">
-    <div class="row">
-
-      <div class="d-flex flex-row flex-wrap m-0 p-0 BG">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex flex-row p-0 BG">
         <div class="bg-white">
-          <div class="text">
-            <p class="title">Beaux <br>Gosses </p>
-            <p class="time">30 min de parcours</p>
+          <div class="text-thirdpart">
+            <p class="title-thirdpart">Beaux <br>Gosses </p>
+            <p class="time-thirdpart">
+              <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+              <span class="min-thirdpart">30 min</span> de parcours
+            </p>
           </div>
         </div>
       </div>
 
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex flex-row m-0 p-0 grand-bleu">
+        <div class="bg-white">
+          <div class="text-thirdpart">
+            <p class="title-thirdpart">Le Grand <br>Bleu</p>
+            <p class="time-thirdpart">
+              <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+              <span class="min-thirdpart">45 min</span> de parcours
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex flex-row m-0 p-0 love">
+        <div class="bg-white">
+          <div class="text-thirdpart">
+            <p class="title-thirdpart">Love, etc</p>
+            <p class="time-thirdpart">
+              <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+              <span class="min-thirdpart">45 min</span> de parcours
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex flex-row m-0 p-0 table">
+        <div class="bg-white">
+          <div class="text-thirdpart">
+            <p class="title-thirdpart">à table ! </p>
+            <p class="time-thirdpart">
+              <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+              <span class="min-thirdpart">45 min</span> de parcours
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row m-0">
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex flex-row m-0 p-0 angel">
+        <div class="bg-white">
+          <div class="text-thirdpart">
+            <p class="title-thirdpart">Anges et <br>Démons </p>
+            <p class="time-thirdpart">
+              <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+              <span class="min-thirdpart">45 min</span> de parcours
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex flex-row m-0 p-0 beast">
+        <div class="bg-white">
+          <div class="text-thirdpart">
+            <p class="title-thirdpart">Histoires de<br>Bêtes </p>
+            <p class="time-thirdpart">
+              <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+              <span class="min-thirdpart">45 min</span> de parcours
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex flex-row m-0 p-0 blonde">
+        <div class="bg-white">
+          <div class="text-thirdpart">
+            <p class="title-thirdpart">Blondes et <br>brunes </p>
+            <p class="time-thirdpart">
+              <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+              <span class="min-thirdpart">45 min</span> de parcours
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex flex-row m-0 p-0 architecture">
+        <div class="bg-white">
+          <div class="text-thirdpart">
+            <p class="title-thirdpart">Ar(t)- <br>chitecture </p>
+            <p class="time-thirdpart">
+              <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+              <span class="min-thirdpart">30 min</span> de parcours
+            </p>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 
+  <div class="container-fluid-incontournables">
+    <p class="incontournable">Les incontournables</p>
+    <div class="row m-0">
 
-    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>
-      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-    </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex justify-content-lg-around flex-row oeuvre1">
+        <div class="bg-oeuvre">
+          <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+          <div class="text-oeuvre">
+            <span class="time-oeuvre">30</span><span class="min-oeuvre">mn</span>
+            <p class="title-oeuvre">
+              de parcours <br>4 œuvres
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function() {
-        ga.q.push(arguments)
-      };
-      ga.q = [];
-      ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto');
-      ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex justify-content-lg-around flex-row oeuvre2">
+        <div class="bg-oeuvre">
+          <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+          <div class="text-oeuvre">
+            <span class="time-oeuvre">60</span><span class="min-oeuvre">mn</span>
+            <p class="title-oeuvre">
+              de parcours <br>8 œuvres
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 d-flex justify-content-lg-around flex-row oeuvre3">
+        <div class="bg-oeuvre">
+          <img class="clock-thirdpart" src="https://png.icons8.com/ios/100/868687/clock.png">
+          <div class="text-oeuvre">
+            <span class="time-oeuvre">90</span><span class="min-oeuvre">mn</span>
+            <p class="title-oeuvre">
+              de parcours <br>12 œuvres
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bandeau-mobile">
+    <div class="icon-visit">
+      <div class="icon-tablet"></div>
+      <div class="icon-mobile"></div>
+    </div>
+    <p class="title-bandeau"><span class="app-mobile">Téléchargez l'appli mobile</span><br>et laissez vous guider</p>
+  </div>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 </body>
 
