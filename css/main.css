@@ -315,12 +315,19 @@ nav .dropdown-menu a:hover {
 
 .social .insta:hover{
   color :white;
-} */
+}
 
 
 
 
  /* AGENDA */
+
+ .icon-triangle {
+   width: 15%;
+   position: relative;
+   left: 42.5%;
+   bottom: 7%;
+   }
 
 .actuality{
   border: 4px solid Black;
@@ -344,7 +351,13 @@ border-right: solid 16px #935297;
 top:655px;
 }
 .borderAgenda2{
-  top: 977px;
+  top: 1364 px;
+  right:33px;
+}
+
+.nextAgenda{
+  border: 4px solid #1D1D1E;
+  padding: 5px 13px;
 }
 .dropdownAgenda{
   position: relative;
@@ -364,33 +377,23 @@ top:655px;
 }
 
 .green{
-  border-top: 1px solid #79a506;
-}
+  border-top: 1px solid #79a506;   /* color green of border-top div */
+  }
 
-.violet{
+.violet{                           /* color purple of border-top div */
   border-top: 1px solid #935297;
-}
-
-
-
+  }
 
 .text-agenda{
   font-size: 1.05rem;
   font-family: "loveloblack", sans-serif;
-}
-.categorie1{
+  }
+.categorie1{                       /* color of span : SENIOR or JUNIOR */
   color: #79a506;
-}
+  }
 .categorie2{
   color: #935297;
-}
-.icon-triangle {
-  width: 15%;
-  position: relative;
-  left: 42.5%;
-  bottom: 7%;
-
-}
+  }
 
 .text-agenda2{
   color:#1D1D1E;
@@ -398,11 +401,30 @@ top:655px;
 }
 
 .footerAgenda{
-  background: #D1D1E1;
+  background: #1D1D1E;
+  color:#ffffff;
+}
+ .nextAgenda .linkAgenda{
+   color:#1D1D1E;
+ }
+
+.linkAgenda{
+  text-decoration: none;
+  color: #ffffff;
+}
+.linkAgenda:hover{
+  color:#D8383F;
+  text-decoration: none;
+}
+.NumeroPage{
+  list-style: none;
+}
+.Numero:hover{
+  color:#D8383F;
 }
 
 
-
+/*  end of agenda page*/
 
 
 
