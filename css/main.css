@@ -259,7 +259,7 @@ nav .dropdown-menu a:hover {
   background-color: #1d1d1e;
 }
 
-.presentoeuvre .presentp{ {
+.presentoeuvre .presentp {
   font-weight: bold;
   font-size: 35px;
 }
@@ -348,13 +348,19 @@ top:655px;
 }
 .dropdownAgenda{
   position: relative;
-right: auto;
-top: auto;
-margin-top: 20px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 240px;
+  margin: auto;
+  margin-top: 65%;
+  padding: 1%;
+  text-align: left;
+}
+
+.profil-firstpart {
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-top: 25%;
+  margin-left: 10%;
+
 }
 
 .green{
@@ -377,6 +383,12 @@ width: 240px;
 }
 .categorie2{
   color: #935297;
+}
+.icon-triangle {
+  width: 15%;
+  position: relative;
+  left: 42.5%;
+  bottom: 7%;
 
 }
 
@@ -513,9 +525,14 @@ width: 240px;
   text-align: center;
 }
 
+.bandeau-mobile:hover {
+  background-color: white;
+  color: #D8383F;
+}
+
 .title-bandeau {
   font-size: 24px;
-  margin-left: 42%;
+  margin-left: 50%;
   vertical-align: middle;
   padding-top: 51px;
   text-align: left;
@@ -527,27 +544,14 @@ width: 240px;
 .bandeau-mobile, .title-bandeau, .app-mobile {
   font-family: "lovelo";
 }
+
 .icon-visit {
   width: 100%;
-}
-.icon-tablet {
-  background-image: url(https://png.icons8.com/wired/100/ffffff/ipad-mini.png);
-  width: 50%;
-}
-
-.icon-mobile {
-  background-image: url(https://png.icons8.com/dotty/100/ffffff/iphone.png);
-  width: 50%;
-}
-
-.icon-tablet:hover {
-  background-image: url(https://png.icons8.com/wired/100/D8383F/ipad-mini.png);
-  width: 50%;
-}
-
-.icon-tablet:hover {
-  background-image: url(https://png.icons8.com/dotty/100/D8383F/iphone.png);
-  width: 50%;
+  display: block;
+  position: absolute;
+  right: 12%;
+  top: 30%;
+  font-size: 50px;
 }
 
 /* End of CSS for visit.html's page */
@@ -738,6 +742,100 @@ width: 240px;
   }
 }
 
+@media (min-width: 360px) {
+  .oeuvre1, .oeuvre2, .oeuvre3 {
+    margin: 0;
+  }
+
+  .bg-oeuvre {
+    margin-left: 15%;
+  }
+  .container-fluid-visite {
+    background-color: #1D1D1E;
+  }
+  .individual, .group, .family, .student, .teacher {
+    background-image: none;
+  }
+  .icon-pba {
+    left: 5%;
+    width: 15%;
+  }
+  .visit-parcours {
+    padding-top: 16%;
+  }
+  .icon-triangle {
+    width: 30%;
+    left: 35%;
+  }
+  .title-bandeau {
+      margin-left: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .oeuvre1, .oeuvre2, .oeuvre3 {
+    margin: 0;
+  }
+  .bg-oeuvre {
+    margin-left: 15%;
+  }
+  .container-fluid-visite {
+    background-color: #1D1D1E;
+  }
+  .individual, .group, .family, .student, .teacher {
+    background-image: none;
+  }
+  .icon-pba {
+    left: 29%;
+    width: 6%;
+    top: 30%;
+  }
+  .visit-parcours {
+    padding-top: 6%;
+  }
+  .icon-triangle {
+    width: 17%;
+    left: 41.5%;
+  }
+  .title-bandeau {
+      margin-left: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .individual, .group, .family, .student, .teacher {
+    height: 70vh;
+    width: 20%;
+    background-size: cover;
+  }
+  .individual {
+    background-image: url(../img/Individuel.jpg);
+  }
+  .group {
+    background-image: url(../img/Groupe.jpg);
+  }
+  .family {
+    background-image: url(../img/Famille.jpg);
+  }
+  .student {
+    background-image: url(../img/Etudiant.jpg);
+  }
+  .teacher {
+    background-image: url(../img/Enseignant.jpg);
+  }
+  .bg-light {
+    max-width: 192.7px;
+  }
+  .oeuvre1, .oeuvre2, .oeuvre3 {
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  .title-bandeau {
+      margin-left: 47%;
+  }
+}
+
 @media only screen and (min-width: 981px) and (max-width:1280px) {
   .container-fluid .lastgalery .lastone {
     display: none;
@@ -764,15 +862,15 @@ width: 240px;
   }
 }
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
 
 @media print {
   *, *:before, *:after {
